@@ -31,10 +31,32 @@
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Igf-OW-GcM"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBU-in-5oH">
+                                <rect key="frame" x="157.33333333333334" y="253" width="100.00000000000003" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9iR-SM-aqc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="55H-lu-EAJ">
+                                <rect key="frame" x="157.33333333333334" y="291" width="100.00000000000003" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hW6-AG-3Uh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xo0-2e-ZoX" firstAttribute="top" secondItem="55H-lu-EAJ" secondAttribute="bottom" constant="37" id="1Sc-2o-VyU"/>
+                            <constraint firstItem="xo0-2e-ZoX" firstAttribute="top" secondItem="dBU-in-5oH" secondAttribute="bottom" constant="75" id="3On-FO-Fui"/>
                             <constraint firstItem="kBL-EH-DcC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="44y-IT-C5q"/>
+                            <constraint firstItem="55H-lu-EAJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kx2-VK-eFZ"/>
+                            <constraint firstItem="dBU-in-5oH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="au3-wc-gxS"/>
                             <constraint firstItem="xo0-2e-ZoX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="esq-sx-HBF"/>
                             <constraint firstItem="kBL-EH-DcC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="gTE-N0-PN8"/>
                             <constraint firstItem="xo0-2e-ZoX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i7p-0E-UBL"/>
@@ -42,8 +64,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="firstNumField" destination="dBU-in-5oH" id="qlh-b2-gxE"/>
                         <outlet property="myButton" destination="8bC-Xf-vdC" id="Juj-Wu-UeJ"/>
                         <outlet property="myLabel" destination="xo0-2e-ZoX" id="YgB-6b-Oq4"/>
+                        <outlet property="secondNumField" destination="55H-lu-EAJ" id="rOh-qz-1Lr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet var myButton: UIView!
     var swap = 0
     
+    @IBOutlet weak var secondNumField: UITextField!
+    @IBOutlet weak var firstNumField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,11 +34,11 @@ class ViewController: UIViewController {
     @IBAction func buttonAction(_ sender: UIButton) {
         if swap == 0{
             view.backgroundColor = UIColor.blue
-            myLabel.text  = "We Blue Now"
+            myLabel.text  = String(Int(secondNumField.text!)! + Int(firstNumField.text!)!)
             swap = 1
         } else {
             view.backgroundColor = UIColor.red
-            myLabel.text  = "We Red Now"
+            myLabel.text  = String(Int(secondNumField.text!)! + Int(firstNumField.text!)!)
             swap = 0
         }
        
