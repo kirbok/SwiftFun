@@ -49,13 +49,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QIr-QL-2J3">
+                                <rect key="frame" x="183" y="186" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xo0-2e-ZoX" firstAttribute="top" secondItem="55H-lu-EAJ" secondAttribute="bottom" constant="37" id="1Sc-2o-VyU"/>
                             <constraint firstItem="xo0-2e-ZoX" firstAttribute="top" secondItem="dBU-in-5oH" secondAttribute="bottom" constant="75" id="3On-FO-Fui"/>
                             <constraint firstItem="kBL-EH-DcC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="44y-IT-C5q"/>
+                            <constraint firstItem="xo0-2e-ZoX" firstAttribute="top" secondItem="QIr-QL-2J3" secondAttribute="bottom" constant="141" id="DY9-1b-89e"/>
                             <constraint firstItem="55H-lu-EAJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kx2-VK-eFZ"/>
+                            <constraint firstItem="QIr-QL-2J3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ymp-6e-9gh"/>
                             <constraint firstItem="dBU-in-5oH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="au3-wc-gxS"/>
                             <constraint firstItem="xo0-2e-ZoX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="esq-sx-HBF"/>
                             <constraint firstItem="kBL-EH-DcC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="gTE-N0-PN8"/>
@@ -64,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="QIr-QL-2J3" id="g2c-am-USz"/>
                         <outlet property="firstNumField" destination="dBU-in-5oH" id="qlh-b2-gxE"/>
                         <outlet property="myButton" destination="8bC-Xf-vdC" id="Juj-Wu-UeJ"/>
                         <outlet property="myLabel" destination="xo0-2e-ZoX" id="YgB-6b-Oq4"/>

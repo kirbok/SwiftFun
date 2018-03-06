@@ -13,8 +13,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet var myButton: UIView!
-    var swap = 0
     
+    
+    @IBOutlet weak var additionSwitch: UISwitch!
     @IBOutlet weak var secondNumField: UITextField!
     @IBOutlet weak var firstNumField: UITextField!
     override func viewDidLoad() {
@@ -32,14 +33,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonAction(_ sender: UIButton) {
-        if swap == 0{
+        
+        let addition = additionSwitch.isOn
+        if addition {
             view.backgroundColor = UIColor.blue
             myLabel.text  = String(Int(secondNumField.text!)! + Int(firstNumField.text!)!)
-            swap = 1
+        
         } else {
             view.backgroundColor = UIColor.red
             myLabel.text  = String(Int(secondNumField.text!)! + Int(firstNumField.text!)!)
-            swap = 0
+  
         }
        
 
